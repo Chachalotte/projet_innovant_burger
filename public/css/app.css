@@ -1,0 +1,186 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 100vh;
+  font-family: 'Alegreya Sans', sans-serif;
+
+}
+
+/* PARTIE RESERVEE AU POLICE ET TAILLE */
+
+h2 {
+  padding-top: 5%;
+  font-family: 'Alegreya Sans', sans-serif;
+
+}
+
+p {
+  font-family: 'Alegreya Sans', sans-serif;
+
+}
+
+/* PARTIE LIE A LA NAVBAR  */
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  position: fixed;
+  width: 100vw;
+}
+
+.nav_gauche, .nav_droite {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#menu_icon {
+
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#menu_icon a {
+
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 75%;
+  margin-left: 10%;
+  margin: 1% 0 0 15%;
+}
+
+.img_menu {
+  height: 35%;
+
+}
+
+#burger_button {
+  height: 100%;
+
+}
+
+#burger_button button {
+  height: 100%;
+  background-color: #ffc54a;
+  border: none;
+  color: white;
+  font-size: 1.4em;
+
+}
+
+/* PARTIE RESERVEE POUR LE BANDEAU D'ACCUEIL */
+
+#background_home {
+
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../img/test.jpg');
+  background-position: center;
+  background-size: cover;
+  
+}
+
+/* PARTIE RESERVEE POUR LA RECHERCHE PRINCIPALE */
+
+#search_primary {
+  height: 60vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+#search_primary h2 {
+  justify-content: center;
+  width: 100%;
+}
+
+#search_primary aside {
+  width: 25vw;
+  margin-left: 75%;
+  background-color: #e1ad3e; 
+  height: 60vh;
+  position: absolute;
+}
+
+#search_primary_part_gauche {
+  width: 100%;
+}
+
+#search_primary_part_gauche form {
+
+  width: 75%;
+  height: 80%;
+
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.form_group button {
+  margin-top: 15%;
+  height: 7vh;
+  border: none;
+}
+
+select {
+  width: 80%;
+  background-color: #ececec;
+  border-radius: 3px;
+  outline:none;
+  border:none;
+  box-shadow:none;
+  height: 7vh;
+  padding: 10px;
+}
+
+/* PARTIE RESERVEE POUR LA RECHERCHE SECONDAIRE*/
+
+#empty_top {
+  height: 40vh;
+}
+
+#search_secondary {
+  height: 100vh;
+  width: 100vw;
+}
+
+#search_bg_secondary {
+  background-color: #fff;
+  height: 20vh;
+}
+
+/* PARTIE RESERVEE POUR LA CONNEXION / INSCRIPTION */
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+}
+
+#login, #inscription {
+  width: 50%;
+  margin-top: 10%
+}
+
+#login {
+  background-color: #FFF;
+}

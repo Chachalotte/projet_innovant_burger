@@ -1,16 +1,84 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Accueil{% endblock %}
+
+
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <section id="background_home">
 
-    <a href="{{path('app_login')}}">Connection</a>
-</div>
+    
+        
+    </section>
+
+    
+    <section id="search_primary">
+
+    <h2 style="text-align:center;">Compose ton burger</h2>
+
+
+    <div id="search_primary_part_gauche" class="container-fluid">
+
+
+     {{ form_start(form, { attr: { 'accept-charset' : 'utf-8', 'class' : 'row' }}) }}
+		
+        <div class="form_group col-5 offset-2">
+
+          {{ form_label(form.pain) }}
+		  {{ form_label(form.pain, 'Pain', {'label_attr': {'class': 'floatLabel'}}) }}
+
+          {{ form_widget(form.pain) }}
+          {{ form_errors(form.pain) }}
+        
+        </div>
+
+         <div class="form_group col-5">
+
+          {{ form_label(form.sauce) }}
+		  {{ form_label(form.sauce, 'Sauce', {'label_attr': {'class': 'floatLabel'}}) }}
+
+          {{ form_widget(form.sauce) }}
+          {{ form_errors(form.sauce) }}
+        
+        </div>
+
+         <div class="form_group col-5 offset-2">
+
+          {{ form_label(form.viande) }}
+		  {{ form_label(form.viande, 'Viande', {'label_attr': {'class': 'floatLabel'}}) }}
+
+          {{ form_widget(form.viande) }}
+          {{ form_errors(form.viande) }}
+        
+        </div>
+
+         <div class="form_group col-5">
+
+          {{ form_label(form.fromage) }}
+		  {{ form_label(form.fromage, 'Fromage', {'label_attr': {'class': 'floatLabel'}}) }}
+
+          {{ form_widget(form.fromage) }}
+          {{ form_errors(form.fromage) }}
+        
+        </div>
+        
+		 
+        <div class="form_group col-3 offset-8">
+
+          {{ form_widget(form.send, {'label': "Valider mon burger"}) }}
+        
+        </div>
+        
+        {{ form_rest(form) }}
+    {{ form_end(form) }}
+
+
+    </div>
+
+    
+    
+        <aside></aside>
+    </section>
+
 {% endblock %}

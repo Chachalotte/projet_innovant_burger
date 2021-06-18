@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+
+
+{% block body %}
+
+    <section id="background_home">
+
+        <div id="empty_top">
+           
+        </div>
+
+        <div id="search_secondary">
+            <p> 
+                
+                {% for recette in recettes %} 
+
+                <div id="search_secondary_background">   
+
+                {{ recette.nomBurger }}
+                </br>
+                {{ recette.pain }} - {{ recette.viande }} - {{ recette.sauce }} - {{ recette.fromage }}
+
+                
+                </div>
+                
+                {% endfor %}
+
+
+            </p>
+        </div>
+        
+    </section>
+
+
+{% endblock %}
